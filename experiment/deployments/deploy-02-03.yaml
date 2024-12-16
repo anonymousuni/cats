@@ -1,0 +1,122 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: deploy-02-03-prepare
+  namespace: default
+spec:
+  template:
+    metadata:
+      labels:
+        app: deploy-02-03-prepare
+    spec:
+      restartPolicy: Never
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/hostname
+                    operator: In
+                    values:
+                      - fog1
+      containers:
+        - name: prepare-main
+          image: nikolayn/bosch-prepare-main-v2
+          env:
+            - name: NODE_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: spec.nodeName
+            - name: DRY_RUN_ID
+              value: "0"
+            - name: RABBITMQ_HOST
+              value: "rabbitmq.rabbitmq.svc.cluster.local"  # Kubernetes DNS name of the RabbitMQ service
+            - name: RABBITMQ_PORT
+              value: "15672"  # Default RabbitMQ port
+            - name: RABBITMQ_USER
+              value: "guest"
+            - name: RABBITMQ_PASS
+              value: "guest"
+            - name: MONGO_HOST
+              value: "mongodb.mongodb.svc.cluster.local" # Kubernetes DNS name of the MongoDB service
+            - name: MONGO_USERNAME
+              value: "root"
+            - name: MONGO_PASSWORD
+              value: "example"
+            - name: MONGO_REFERENCE_DATABASE
+              value: "meta_info_db"
+            - name: MAX_RETRIES
+              value: "5"
+          volumeMounts:
+                - name: out-volume
+                  mountPath: /out
+                - name: log-volume
+                  mountPath: /log
+                - name: datasource-volume
+                  mountPath: /DataSource
+                - name: fog1-volume
+                  mountPath: /fog1
+                - name: fog2-volume
+                  mountPath: /fog2
+                - name: fog3-volume
+                  mountPath: /fog3
+                - name: cloud1-volume
+                  mountPath: /cloud1
+                - name: cloud2-volume
+                  mountPath: /cloud2
+                - name: cloud3-volume
+                  mountPath: /cloud3
+                - name: cloud4-volume
+                  mountPath: /cloud4
+                - name: cloud5-volume
+                  mountPath: /cloud5
+                - name: cloud6-volume
+                  mountPath: /cloud6
+                - name: cloud7-volume
+                  mountPath: /cloud7
+                - name: cloud8-volume
+                  mountPath: /cloud8
+          command: ["/code/record.sh"]
+      volumes:
+        - name: out-volume
+          hostPath:
+            path: /out
+        - name: log-volume
+          hostPath:
+            path: /fog1/log
+        - name: datasource-volume
+          hostPath:
+            path: /fog1
+        - name: fog1-volume
+          hostPath:
+            path: /fog1
+        - name: fog2-volume
+          hostPath:
+            path: /fog2
+        - name: fog3-volume
+          hostPath:
+            path: /fog3
+        - name: cloud1-volume
+          hostPath:
+            path: /cloud1
+        - name: cloud2-volume
+          hostPath:
+            path: /cloud2
+        - name: cloud3-volume
+          hostPath:
+            path: /cloud3
+        - name: cloud4-volume
+          hostPath:
+            path: /cloud4
+        - name: cloud5-volume
+          hostPath:
+            path: /cloud5
+        - name: cloud6-volume
+          hostPath:
+            path: /cloud6
+        - name: cloud7-volume
+          hostPath:
+            path: /cloud7
+        - name: cloud8-volume
+          hostPath:
+            path: /cloud8

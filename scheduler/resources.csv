@@ -1,0 +1,11 @@
+Instance type,Name,Memory capacity (GiB),Number of CPUs,CPU frequency (GHz),Number of nodes,Node type,AZ,On-demand hourly rate (USD)
+i3.large,fog1,15.25,2,2.3,1,Fog,eu-west-1,0.172
+t2.medium,fog2,4,2,3.3,1,Fog,eu-west-1,0.05
+r5.xlarge,cloud1,32,4,3.1,1,EC2,eu-west-1,0.282
+r5.xlarge,cloud2,32,4,3.1,1,EC2,eu-west-1,0.282
+r5.large,cloud3,16,2,3.1,1,EC2,eu-west-1,0.141
+r5.large,cloud4,16,2,3.1,1,EC2,eu-west-1,0.141
+m4.large,cloud5,16,4,2.4,1,EC2,eu-west-1,0.111
+m4.large,cloud6,16,4,2.4,1,EC2,eu-west-1,0.111
+m4.2xlarge,cloud7,32,8,2.4,1,EC2,eu-west-1,0.444
+m4.2xlarge,cloud8,32,8,2.4,1,EC2,eu-west-1,0.444

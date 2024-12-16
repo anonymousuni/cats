@@ -1,0 +1,28 @@
+VariableNameUDF,VariableNameBOS6000,Description
+ProgID,spotName,Unique ID for the welding program
+ProgNo,progNo,Program Number in BOS6000
+ControlName,timerName,control name
+Sheet1Material,Sheet Metal Material (Sheet1),Material type of sheet top
+Sheet1ThicknessActual,Sheet Metal Thickness (Sheet1),-
+Sheet1ComponentName,Component Name Sheet 1,
+Sheet1ComponentID,Component ID Sheet 1,
+Sheet1ThicknessNominal,Sheet Metal Thickness (Sheet1),
+Sheet1Coating,Coating (Sheet 1),
+Sheet1Sheet2Adhesive,"Adhesive (Between 1, 2)",
+Sheet2Material,Sheet Metal Material (Sheet2),"Sheet 2 is sheet bottom if sheet 3 does not exist, and sheet middle if sheet 3 does exist."
+Sheet2ThicknessActual,Sheet Metal Thickness (Sheet2),-
+Sheet2ComponentName,Component Name Sheet 2,
+Sheet2ComponentID,Component ID Sheet 2,
+Sheet2ThicknessNominal,Sheet Metal Thickness (Sheet2),
+Sheet2Coating,Coating (Sheet 2),
+Sheet2Sheet3Adhesive,"Adhesive (Between 3, 2)",
+Sheet3Material,Sheet Metal Material (Sheet3),Material type of sheet bottom
+Sheet3ThicknessActual,Sheet Metal Thickness (Sheet3),-
+Sheet3ComponentName,Component Name Sheet 3,
+Sheet3ComponentID,Component ID Sheet 3,
+Sheet3ThicknessNominal,Sheet Metal Thickness (Sheet3),
+Sheet3Coating,Coating (Sheet3),
+TotalSheetThickness,Total sheet thickness,Thickness of all sheets
+ExtraInfo,ExtraInfo,
+SpotType,SpotType,Type of spot
+CapType,CapType,Type of cap

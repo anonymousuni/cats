@@ -1,0 +1,8 @@
+VariableNameUDF,VariableNameBOS6000,Description
+Time,Time,
+ReferenceCurveCurrent,Current,
+ReferenceCurveVoltage,Voltage,
+ReferenceCurveResistance,Resistance,
+ReferenceCurvePWM,PWM,
+ReferenceCurveZWKS,ZWKS,
+ReferenceCurveForce,Force,

@@ -1,0 +1,826 @@
+VariableNameUDF,VariableNameBOS6000,Description
+id,protRecord_ID,-
+FilenameTimeseries,-,-
+DateTime,dateTime,Date and time of welding
+ControlName,timerName,control name
+WeldingStation,-,ID of the welding station
+ProgID,spotName,Unique ID for the welding program
+ProgNo,progNo,Program Number in BOS6000
+ElectrodeNames,-,
+ElectrodeNumber,electrodeNo,-
+ExtraInformation,ExtraInfo,Extra Information
+CapWearCount,wear,Number of welded spots in a dressing cycle
+CapDressCount,tipDressCounter,Number of dresssing in a cap life cycle
+CapWearPercentage,wearPerCent,-
+SpotRepetition,reweld mode,Whether the spot has been repeatedly welded
+SpatterOccurTime,uirExpulsionTime,The time when spatter happened
+RegulationMode,-,Regulatoin Mode
+TimeTotalTarget,t_iDemandStd,Target time total welding time (only active if time monitoring is active)
+TimeTotalActual,tActualStd,Actual total duration of the welding
+NuggetDiameter,nuggetDiameter,Mean value of the two values of nugget diameter
+UnixEpoch,-,Can be used as ID
+LogNo,-,Non-unique ID for the log entry used in the lab to map the diamter measurement
+WorksheetID,partIdentString,Text Component identifier
+,,
+UIPActual,uipActualValue,Actual quality factor UIP (steel)
+UIPSetpoint,uipRefValue,Setpoint quality factor UIP (steel)
+UIPTolUpper,uirUipUpperTol,Quality monitoring UIP absolute Tolband top (percentage)
+UIPTolLower,uirUipLowerTol,Quality monitoring UIP absolute Tol.Band bottom (percentage)
+UIPCondTolUpper,uipMonCondUpperTol,Quality Supervision UIP Conditional Tolband Top (Percentage)
+UIPCondTolLower,uirUipCondTol,Quality Monitoring UIP Conditional Tol.Band Bottom (Percentage)
+PSFSetpoint,stabilisationFactorRefValue,Setpoint quality factor PSF
+PSFActual,stabilisationFactorActValue,Actual value process stability factor
+PSFTolUpper,uirPsfLowerTol,Quality Monitoring PSF Conditional Tol.Band Bottom (Percent)
+PSFTolLower,-,Quality Monitoring PSF Absolute Tol Band Bottom (Percentage)
+PSFCondTolLower,uirPsfCondTol,
+FQFMeasurementStatus,fqfMeasuringActive,
+FQFSetpoint,fqfRefValue,Setpoint quality factor FQF (aluminum)
+FQFActual,fqfActualValue,Actual value quality factor FQF (aluminum)
+FQFTolUpper,fqfMonUpperTol,Quality Supervision FQF Absolute Tolband Top (Percentage)
+FQFTolLower,fqfMonLowerTol,Quality Monitoring FQF Absolute Tolband Bottom (Percentage)
+FQFCondTolUpper,fqfMonCondUpperTol,Quality Supervision FQF Conditional Tolband Top (Percentage)
+FQFCondTolLower,fqfMonCondLowerTol,Quality Monitoring FQF Conditional Tol.Band Bottom (Percentage)
+QStopRefCounter,uirQStoppRefCntValue,Quality monitoring Qstopp Target counter value
+QStopActualCounter,uirQStoppActCntValue,Quality control Qstopp Actual counter value
+,,
+CurrentAllSetpoint,iDemandStd,Target current for standard current monitoring (over all current times)
+CurrentAllActual,ilsts,Actual mean current for standard current monitoring (over all current times)
+Current1Setpoint,iDemand1,Target current 1 current time
+Current1Actual,iActual1,Actual mean current 1 current time
+Current2Setpoint,iDemand2,Target current 2 current time
+Current2Actual,iActual2,Actual mean current 2 current time
+Current3Setpoint,iDemand3,Target current 3 Current time
+Current3Actual,iActual3,Actual mean current 3 current time
+CurrentSetpoint,currentReferenceValue,Setpoint current
+CurrentActual,currentActualValue,Actual mean value current
+PhaseAllActual,phaStd,Actual mean phase gate standard (over all current times)
+Phase1Actual,pha1,Actual mean phase gate 1 current time
+Phase2Actual,pha2,Istphasenanschnitt 2 current time
+Phase3Actual,pha3,Actual mean phase gate 3 Current time
+VoltageSetpoint,voltageRefValue,Setpoint voltage
+VoltageActual,voltageActualValue,Actual mean voltage
+WeldingTimeSetpoint,weldTimeRefValue,Setpoint time
+WeldingTimeActual,weldTimeActualValue,Actual mean time
+EnergySetpoint,energyRefValue,Setpoint energy
+EnergyActual,energyActualValue,Actual mean energy
+PowerSetpoint,powerRefValue,Setpoint power
+PowerActual,powerActualValue,Actual mean value performance
+ResistanceSetpoint,resistanceRefValue,Setpoint resistance
+ResistanceActual,resistanceActualValue,Actual mean value resistance
+PulseWidthSetpoint,pulseWidthRefValue,Setpoint pulse width
+PulseWidthActual,pulseWidthActualValue,Actual mean pulse width
+TimeProgValueSetpoint,timeProgValue,not used
+TimeProgValueActual,timeActualValue,not used
+,,
+MonitorState,monitorState,Status code of the monitoring
+MonitorStateText,monitorState_txt,Status text of the monitoring
+MonitorMode,monitorMode,Status code of the monitoring mode
+MonitorModeText,monitorMode_txt,Status text of the monitoring mode
+ErrorValueSetpoint,weldProgValue,Setpoint of the error size
+ErrorValueActual,weldActualValue,Actual value of the error size
+IsError,isError,Error yes / no
+RegulationStatus,regulationState,Status code of the control
+RegulationStatusText,regulationState_txt,Status text of the control
+MeasurementStatus,measureState,Status code of the measurement
+MeasurementStatusText,measureState_txt,Status text of the measurement
+PowerStatus,powerState,Status code of the power unit
+PowerStatusText,powerState_txt,Status text of the power unit
+ProcessControlStatus,sequenceState,Status code of the process control
+ProcessControlStatusText,sequenceState_txt,Status text of the process control
+AdditionalProcessControlStatus,sequenceStateAdd,additional status code of the process control
+AdditionalProcessControlStatusText,sequenceStateAdd_txt,additional status text of the process control
+SpotRepetitionStatus,sequenceRepeat,Status code of the point repetition
+SpotRepetitionStatusText,sequenceRepeat_txt,Status text of the point repetition
+CurrentControlModeStatus,regulationStd,Code for the standard current control mode (over all current times)
+CurrentControlModeStatusText,regulationStd_txt,Text for the standard current control mode (over all current times)
+CurrentControlMode1Status,regulation1,Status code Control mode 1 Current time
+CurrentControlMode1StatusText,regulation1_txt,Status text Control mode 1 Current time
+CurrentControlMode2Status,regulation2,Status code Control mode 2 Current time
+CurrentControlMode2StatusText,regulation2_txt,Status text Control mode 2 Current time
+CurrentControlMode3Status,regulation3,Status code Control mode 3 Current time
+CurrentControlMode3StatusText,regulation3_txt,Status text Control mode 3 Current time
+XQRModeOff,xqrModeOff,Status adaptive mode switched off externally
+XQRMeasuringActiveStatus,xqrMeasuringActive,not used
+XQRMeasuringActiveStatusText,xqrMeasuringActive_txt,not used
+XQRRegulationActiveStatus,xqrRegulationActive,not used
+XQRRegulationActiveStatusText,xqrRegulationActive_txt,not used
+XQRMonitoringActiveStatus,xqrMonitoringActive,not used
+XQRMonitoringActiveStatusText,xqrMonitoringActive_txt,not used
+XQRWeldTimeProlongationActiveStatus,xqrWeldTimeProlongationActive,not used
+XQRWeldTimeProlongationActiveStatusText,xqrWeldTimeProlongationActive_txt,not used
+AdaptiveMeasurementStatus,uirMeasuringActive,Status adaptive measurement
+AdaptiveMeasurementStatusText,uirMeasuringActive_txt,Text adaptive measurement
+AdaptiveControlStatus,uirRegulationActive,Status adaptive control
+AdaptiveControlStatusText,uirRegulationActive_txt,Text adaptive control
+AdaptiveMonitoringStatus,uirMonitoringActive,Status adaptive monitoring
+AdaptiveMonitoringStatusText,uirMonitoringActive_txt,Text adaptive monitoring
+WeldTimeExtensionStatus,uirWeldTimeProlongationActive,Status adaptive current time extension
+WeldTimeExtensionStatusText,uirWeldTimeProlongationActive_txt,Text adaptive current time extension
+,,
+,,
+ServoGunForceSetPoint,sgForceSetPoint,only active with servo-gun function
+ServoGunSheetThicknessSetPoint,sgSheetThicknessSetPoint,only active with servo-gun function
+ServoGunSheetThickness,sgSheetThickness,only active with servo-gun function
+ServoGunSagGPSetPoint,sgSagGpSetPoint,only active with servo-gun function
+ServoGunSagGP,sgSagGp,only active with servo-gun function
+ServoGunSagGC,sgSagGc,only active with servo-gun function
+ServoGunSpotWithSg,sgSpotWithSg,only active with servo-gun function
+ServoGunSpotWithSgText,sgSpotWithSg_txt,only active with servo-gun function
+ServoGunMotorCurrent,sgMotorCurrent,only active with servo-gun function
+ServoGunMotorTemperature,sgMotorTemp,only active with servo-gun function
+ServoGunForce,sgForce,only active with servo-gun function
+usp,usp,not used
+declineUsp,declineUsp,not used
+offsetUsp,offsetUsp,not used
+USPSetpoint,uspDemand,not used
+USPActual,uspActual,not used
+SpotDiameterSetpoint,spotDiaDemand,not used
+SpotDiameterActual,spotDiaActual,not used
+StzvSetpoint,stzvDemand,not used
+StzvActual,stzvActual,not used
+,,
+RegUsrUspJunction,regUsrUspJunction,not used
+RegUsrUspMax,regUsrUspMax,not used
+RegSpotDiaActual,regSpotDiaActual,not used
+RegSpotDiaMinDemand,regSpotDiaMinDemand,not used
+RegSplashTime,regSplashTime,not used
+triggerTime,triggerTime,not used
+normingTime,normingTime,not used
+regulationStartTime,regulationStartTime,not used
+returnToConstantCurrent,returnToConstantCurrent,not used
+currentFactor,currentFactor,not used
+ThreshholdStabilisationFactor,thresholdStabilisationFactor,not used
+WeldEffectStabilsationFactor,wldEffectStabilisationFactor,not used
+WeldSpotCustDataP16_1Code,weldSpotCustDataP16_1,Customized. dates
+WeldSpotCustDataP16_1Text,weldSpotCustDataP16_1_txt,Customized. dates
+WeldSpotCustDataP16_2Code,weldSpotCustDataP16_2,Customized. dates
+WeldSpotCustDataP16_2Text,weldSpotCustDataP16_2_txt,Customized. dates
+WeldSpotCustDataP16_3Code,weldSpotCustDataP16_3,Customized. dates
+WeldSpotCustDataP16_3Text,weldSpotCustDataP16_3_txt,Customized. dates
+WeldSpotCustDataP16_4Code,weldSpotCustDataP16_4,Customized. dates
+WeldSpotCustDataP16_4Text,weldSpotCustDataP16_4_txt,Customized. dates
+WeldSpotCustDataP16_5Code,weldSpotCustDataP16_5,Customized. dates
+WeldSpotCustDataP16_5Text,weldSpotCustDataP16_5_txt,Customized. dates
+WeldSpotCustDataP32_6Code,weldSpotCustDataP32_6,Customized. dates
+WeldSpotCustDataP32_6Text,weldSpotCustDataP32_6_txt,Customized. dates
+WeldSpotCustDataP16_7Code,weldSpotCustDataP16_7,Customized. dates
+WeldSpotCustDataP16_7Text,weldSpotCustDataP16_7_txt,Customized. dates
+WeldSpotCustDataP16_8Code,weldSpotCustDataP16_8,Customized. dates
+WeldSpotCustDataP16_8Text,weldSpotCustDataP16_8_txt,Customized. dates
+WeldSpotCustDataP16_9Code,weldSpotCustDataP16_9,Customized. dates
+WeldSpotCustDataP16_9Text,weldSpotCustDataP16_9_txt,Customized. dates
+WeldSpotCustDataP16_10Code,weldSpotCustDataP16_10,Customized. dates
+WeldSpotCustDataP16_10Text,weldSpotCustDataP16_10_txt,Customized. dates
+WeldSpotCustDataP16_11Code,weldSpotCustDataP16_11,Customized. dates
+WeldSpotCustDataP16_11Text,weldSpotCustDataP16_11_txt,Customized. dates
+WeldSpotCustDataP32_12Code,weldSpotCustDataP32_12,Customized. dates
+WeldSpotCustDataP32_12Text,weldSpotCustDataP32_12_txt,Customized. dates
+WeldSpotCustDataP16_13Code,weldSpotCustDataP16_13,Customized. dates
+WeldSpotCustDataP16_13Text,weldSpotCustDataP16_13_txt,Customized. dates
+WeldSpotCustDataP16_14Code,weldSpotCustDataP16_14,Customized. dates
+WeldSpotCustDataP16_14Text,weldSpotCustDataP16_14_txt,Customized. dates
+WeldSpotCustDataP16_15Code,weldSpotCustDataP16_15,Customized. dates
+WeldSpotCustDataP16_15Text,weldSpotCustDataP16_15_txt,Customized. dates
+WeldSpotCustDataP16_16Code,weldSpotCustDataP16_16,Customized. dates
+WeldSpotCustDataP16_16Text,weldSpotCustDataP16_16_txt,Customized. dates
+WeldSpotCustDataP16_17Code,weldSpotCustDataP16_17,Customized. dates
+WeldSpotCustDataP16_17Text,weldSpotCustDataP16_17_txt,Customized. dates
+WeldSpotCustDataP32_18Code,weldSpotCustDataP32_18,Customized. dates
+WeldSpotCustDataP32_18Text,weldSpotCustDataP32_18_txt,Customized. dates
+ReferenceCurveIdentification,reference identification,Identification of how the reference curve was generated
+,,
+ParentIndex,,
+WeldOn,,
+GunResistance,,
+ReferenceGunResistance,,
+DiDt,,
+WeldJobVersion,,
+FieldBusSpotSelection,,
+DiameterUpperMean,,
+D3Lower,,
+D4Lower,,
+DiameterLowerMean,,
+,,
+SequenceState,,
+MonitorStateWP,,
+CurrentMeasurementState,,
+VoltageMeasurementState,,
+ForceMeasurementState,,
+,,
+CurrentMean,,
+CurrentMeanPrim,,
+CurrentMeanMgdm,,
+CurrentMeanSec,,
+VoltageMean,,
+ResistanceMax,,
+ResistanceDrop,,
+ForceOffset,,
+ForceMean,,
+ForceStart,,
+ForceMax,,
+PulseMean,,
+,,
+MonitorErrorCodeWP,,
+MonitorStdMode,,
+MonitorStdActive,,
+MonitorStdMonitorState,,
+MonitorStdReferenceValue,,
+MonitorStdActualValue,,
+MonitorStdUpperToleranceBandPerc,,
+MonitorStdLowerToleranceBandPerc,,
+MonitoringBlockProtocolCount,,
+MonitorErrorCode,,
+MonitorStdMonitorErrorCode,,
+MonitorStdStarttime,,
+MonitorStdStoptime,,
+,,
+STCNameSelection,,
+STCReferenceSelection,,
+ActiveSTCTeachNameWP,,
+ActiveSTCTeachGroupWP,,
+ActiveSTCTeachBaseWP,,
+ActiveSTCTeachCurveNoWP,,
+ActiveSTCTeachName,,
+ActiveSTCTeachGroup,,
+ActiveSTCTeachBase,,
+ActiveSTCTeachCurveNo,,
+,,
+PowerStepper,,
+ForceStepper,,
+PowerCorr,,
+ForceCorr,,
+,,
+SequenceBlockNo,,
+SequenceBlockType,,
+SequenceBlockProtocolCount,,
+SeqChkPara,,
+ScheduledBlockNo,,
+LengthBlockProtocol,,
+ReferenceCurveLength,,
+,,
+CapDiameter,,
+TempCoolingWater,,
+DistanceToPreviousWeld,,
+TimeToPreviousWeld,,
+DressCutterType,,
+GluePresentStatus,,
+WeldJobName,,
+GunName,,
+GunNumber,,
+TipName,,
+TipNumber,,
+TipCheckMode,,
+TipWearState,,
+SheetCombinationNumber,,
+ExternalWeldOff,,
+GhostRunMode,,
+UIRModeOff,,
+SagBlockProtocol,,
+RefAveragingOK,,
+Datum,,
+Comment,,
+CommentWP,,
+Datensatz,,
+,,
+CurrentPreTotal,-,
+CurrentTotal,-,
+CurrentAfterTotal,-,
+EnergyMaximum,-,
+EnergyTotal,-,
+PowerMaximum,-,
+ResistanceMean,-,
+TempCap,-,
+TempAll,-,
+TotalForceMove,-,
+MaxForce,-,
+TopElectrodeReactionForce2,-,
+,,
+SimulationNumber,-,Ordinal number of the spot in one campaign
+SimulationCampaign,-,Campaign number of the simulation
+Nodes,-,Number of nodes used in the FEM simulation
+Elements,-,Number of elements used in the FEM simulation
+SimulationModelType,-,-
+OutputInt,-,-
+SyncronizationTime,-,-
+WeldedSpotsCountCap,-,
+WeldedSpotsCountTotal,-,
+WearFactorResistance,-,
+WearFactorRadius,-,
+SheetScenario,-,
+FixedDisplacement,-,
+,,
+D1,-,Nugget diameter of the first measurement
+D2,-,Nugget diameter of the second measurement
+CurrentMaximum,-,
+CurrentAmp_A,-,
+CurrentAmp_B,-,
+CurrentAmp_C,-,
+TotaResitanceMax,-,
+TempTopCapMax,-,
+TempBotCapMax,-,
+ForceAmp_A,-,
+ForceAmp_B,-,
+ForceAmp_C,-,
+DisplacementTopCapMax,-,
+TopElectrodeDisplacement,-,
+,,
+CapMaterial,-,
+CapTopMaterial,-,
+CapBotMaterial,-,
+CapTopID,,
+CapTopForm,,
+CapTopType,,
+CapTopDresserType,,
+CapTopGeometry,-,
+CapTopLength1,-,
+CapTopLength2,-,
+CapTopBreadthFull,-,
+CapTopBreadth2,-,
+CapTopBreadth3,-,
+CapTopAngleAlpha,-,
+CapTopAngleBeta,-,
+CapTopAngleGamma,-,
+CapTopValuez,-,
+CapTopValuex,-,
+CapTopValueR1,-,
+CapTopd2Dress,,
+CapTopR1Dress,,
+CapTopdeltaL1Dress,,
+CapTopDDress,,
+CapTopEpsRadiate,,
+CapTopHeatTransfCoeff,,
+CapBotID,,
+CapBotForm,,
+CapBotType,,
+CapBotDresserType,,
+CapBotGeometry,-,
+CapBotLength1,-,
+CapBotLength2,-,
+CapBotBreadthFull,-,
+CapBotBreadth2,-,
+CapBotBreadth3,-,
+CapBotAngleAlpha,-,
+CapBotAngleBeta,-,
+CapBotAngleGamma,-,
+CapBotValuez,-,
+CapBotValuex,-,
+CapBotValueR1,-,
+CapBotd2Dress,,
+CapBotR1Dress,,
+CapBotdeltaL1Dress,,
+CapBotDDress,,
+CapBotEpsRadiate,,
+CapBotHeatTransfCoeff,,
+TopHoldingDeviceBreadth,-,
+TopHoldingDeviceLength,-,
+TopHoldingDeviceDistanceYAxis,-,
+BottomHoldingDeviceBreadth,-,
+BottomHoldingDeviceLength,-,
+BottomHoldingDeviceDistanceYAxis,-,
+GunTopID,,
+GunTopSpringStiffness,,
+GunTopGunResistance,,
+GunTopIPGunShaft,,
+GunTopThermalMass,,
+GunTopTBCCool,,
+GunTopHSpring,,
+GunTopHRigid,,
+GunTopdeltaHExpansion,,
+GunTopTExpansion,,
+GunTopSpecificHeatCapacity,,
+GunTopJouleHeatingFraction,,
+GunBotID,,
+GunBotSpringStiffness,,
+GunBotGunResistance,,
+GunBotIPGunShaft,,
+GunBotThermalMass,,
+GunBotTBCCool,,
+GunBotHSpring,,
+GunBotHRigid,,
+GunBotdeltaHExpansion,,
+GunBotTExpansion,,
+GunBotSpecificHeatCapacity,,
+GunBotJouleHeatingFraction,,
+ShaftType,-,
+ShaftTopMaterial,-,Material type of shsaft top
+ShaftBotMaterial,-,Material type of shsaft bottom
+ShaftTopID,,
+ShaftTopType,,
+ShaftTopGeometry,-,A group of parameters describing the geometry properties of the shaft top. It will be expanded
+ShaftTopTotalLength,-,
+ShaftTopLength2,-,
+ShaftTopLength3,-,
+ShaftTopGap,-,
+ShaftTopGap2,-,
+ShaftTopAngleDelta,-,
+ShaftTopLThread,,
+ShaftTopdCool,,
+ShaftTopEpsRadiate,,
+ShaftTopHeatTransfCoeff,,
+ShaftBotGeometry,-,
+ShaftBotID,,
+ShaftBotType,,
+ShaftBotTotalLength,-,
+ShaftBotLength2,-,
+ShaftBotLength3,-,
+ShaftBotGap,-,
+ShaftBotGap2,-,
+ShaftBotAngleDelta,-,
+ShaftTopStiffness,-,
+ShaftBotStiffness,-,
+ShaftBotLThread,,
+ShaftBotdCool,,
+ShaftBotEpsRadiate,,
+ShaftBotHeatTransfCoeff,,
+SheetMaterial,-,
+SheetTopThickness,-,Nominal value of the sheet 1 thickness
+SheetTopThicknessStd,-,Standard deviation of the sheet 1 thickness
+SheetTopWidth,-,
+SheetTopWidthActual,-,
+SheetTopWidthStd,-,
+SheetTopLength,-,
+SheetTopLengthActual,-,
+SheetTopLengthStd,-,
+SheetTopBoolMechBC,,
+SheetTopBTherm,,
+SheetTopBExtra,,
+SheetTopEpsRadiate,,
+SheetTopHeatTransfCoeff,,
+SheetMiddleThickness,-,
+SheetMiddleThicknessStd,-,
+SheetMiddleWidth,-,
+SheetMiddleWidthActual,-,
+SheetMiddleWidthStd,-,
+SheetMiddleLength,-,
+SheetMiddleLengthActual,-,
+SheetMiddleLengthStd,-,
+SheetMiddleBoolMechBC,,
+SheetMiddleBTherm,,
+SheetMiddleBExtra,,
+SheetMiddleEpsRadiate,,
+SheetMiddleHeatTransfCoeff,,
+SheetBotThickness,-,
+SheetBotThicknessStd,-,
+SheetBotWidth,-,
+SheetBotWidthActual,-,
+SheetBotWidthStd,-,
+SheetBotLength,-,
+SheetBotActual,-,
+SheetBotLengthStd,-,
+SheetBotBoolMechBC,,
+SheetBotBTherm,,
+SheetBotBExtra,,
+SheetBotEpsRadiate,,
+SheetBotHeatTransfCoeff,,
+,,
+CapTopResistance,-,Nominal resistance of cap top
+CapBotResistance,-,Nominal resistance of cap bottom
+CapMaterialDensity,-,Nominal value of cap mateiral
+CapMaterialDensityTypeA,-,
+CapMaterialDensityTypeB,-,
+CapMaterialDensityTypeC,-,
+CapMaterialEConductivity,-,
+CapMaterialEConductivityTypeA,-,
+CapMaterialEConductivityTypeB,-,
+CapMaterialEConductivityTypeC,-,
+CapMaterialHConductivity,-,
+CapMaterialHConductivityTypeA,-,
+CapMaterialHConductivityTypeB,-,
+CapMaterialHConductivityTypeC,-,
+CapMaterialSpecHeat,-,
+CapMaterialSpecHeatTypeA,-,
+CapMaterialSpecHeatTypeB,-,
+CapMaterialSpecHeatTypeC,-,
+CapMaterialPlasticity,-,
+CapMaterialPlasticityTTypeA,-,
+CapMaterialPlasticityTTypeB,-,
+CapMaterialPlasticityTTypeC,-,
+CapMaterialPlasticityVTypeA,-,
+CapMaterialPlasticityVTypeB,-,
+CapMaterialPlasticityVTypeC,-,
+CapMaterialPlasticityTypeA,-,
+CapMaterialPlasticityTypeB,-,
+CapMaterialPlasticityTypeC,-,
+CapMaterialElasticity,-,
+CapMaterialElasticityTTypeA,-,
+CapMaterialElasticityTTypeB,-,
+CapMaterialElasticityTTypeC,-,
+CapMaterialElasticityVTypeA,-,
+CapMaterialElasticityVTypeB,-,
+CapMaterialElasticityVTypeC,-,
+CapMaterialElasticityTypeA,-,
+CapMaterialElasticityTypeB,-,
+CapMaterialElasticityTypeC,-,
+CapMaterialHeatExpansion,-,Nominal Heat expansion coefficient of cap material
+CapMaterialHeatExpansionTypeA,-,
+CapMaterialHeatExpansionTypeB,-,
+CapMaterialHeatExpansionTypeC,-,
+CapMaterialTopDensityStd,-,Density standard deviation
+CapMaterialTopDensity,,
+CapMaterialTopEConductivityStd,-,
+CapMaterialTopEConductivity,,
+CapMaterialTopHConductivityStd,-,
+CapMaterialTopHConductivity,,
+CapMaterialTopSpecHeatStd,-,
+CapMaterialTopSpecHeat,,
+CapMaterialTopPlasticityStd,-,
+CapMaterialTopElasticityStd,-,
+CapMaterialTopHeatExpansionStd,-,Heat expansion coefficient standard deviation of cap material
+CapMaterialTopHeatExpansion,,
+CapMaterialTopHeatExpansionTRef,,
+CapMaterialTopEModulus,,
+CapMaterialTopYieldStress,,
+CapMaterialTopLatentHeat,,
+CapMaterialTopJouleHeatFrac,,
+CapMaterialBotDensityStd,-,Density standard deviation
+CapMaterialBotDensity,,
+CapMaterialBotEConductivityStd,-,
+CapMaterialBotEConductivity,,
+CapMaterialBotHConductivityStd,-,
+CapMaterialBotHConductivity,,
+CapMaterialBotSpecHeatStd,-,
+CapMaterialBotSpecHeat,,
+CapMaterialBotPlasticityStd,-,
+CapMaterialBotElasticityStd,-,
+CapMaterialBotHeatExpansionStd,-,Heat expansion coefficient standard deviation of cap material
+CapMaterialBotHeatExpansion,,
+CapMaterialBotHeatExpansionTRef,,
+CapMaterialBotEModulus,,
+CapMaterialBotYieldStress,,
+CapMaterialBotLatentHeat,,
+CapMaterialBotJouleHeatFrac,,
+,,
+ShaftTopResistance,-,
+ShaftBotResisatnce,-,
+ShaftDensity,-,
+ShaftTopDensity,,
+ShaftBotDensity,,
+ShaftSpringDensityTypeA,-,
+ShaftSpringDensityTypeB,-,
+ShaftSpringDensityTypeC,-,
+ShaftRigidBodyDensityTypeA,-,
+ShaftRigidBodyDensityTypeB,-,
+ShaftRigidBodyDensityTypeC,-,
+ShaftEConductivity,-,
+ShaftTopEConductivity,,
+ShaftBotEConductivity,,
+ShaftSpringEConductivityTypeA,-,
+ShaftSpringEConductivityTypeB,-,
+ShaftSpringEConductivityTypeC,-,
+ShaftRigidBodyEConductivityTypeA,-,
+ShaftRigidBodyEConductivityTypeB,-,
+ShaftRigidBodyEConductivityTypeC,-,
+ShaftHConductivity,-,
+ShaftTopHConductivity,,
+ShaftBotHConductivity,,
+ShaftSpringHConductivityTypeA,-,
+ShaftSpringHConductivityTypeB,-,
+ShaftSpringHConductivityTypeC,-,
+ShaftRigidBodyHConductivityTypeA,-,
+ShaftRigidBodyHConductivityTypeB,-,
+ShaftRigidBodyHConductivityTypeC,-,
+ShaftSpecHeat,-,
+ShaftTopSpecHeat,,
+ShaftBotSpecHeat,,
+ShaftSpringSpecHeatTypeA,-,
+ShaftSpringSpecHeatTypeB,-,
+ShaftSpringSpecHeatTypeC,-,
+ShaftRigidBodySpecHeatTypeA,-,
+ShaftRigidBodySpecHeatTypeB,-,
+ShaftRigidBodySpecHeatTypeC,-,
+ShaftPlasticity,-,
+ShaftSpringPlasticityTTypeA,-,
+ShaftSpringPlasticityTTypeB,-,
+ShaftSpringPlasticityTTypeC,-,
+ShaftRigidBodyPlasticityTTypeA,-,
+ShaftRigidBodyPlasticityTTypeB,-,
+ShaftRigidBodyPlasticityTTypeC,-,
+ShaftSpringPlasticityVTypeA,-,
+ShaftSpringPlasticityVTypeB,-,
+ShaftSpringPlasticityVTypeC,-,
+ShaftRigidBodyPlasticityVTypeA,-,
+ShaftRigidBodyPlasticityVTypeB,-,
+ShaftRigidBodyPlasticityVTypeC,-,
+ShaftSpringPlasticityTypeA,-,
+ShaftSpringPlasticityTypeB,-,
+ShaftSpringPlasticityTypeC,-,
+ShaftRigidBodyTypeAPlasticity,-,
+ShaftRigidBodyTypeBPlasticity,-,
+ShaftRigidBodyTypeCPlasticity,-,
+ShaftElasticity,-,
+ShaftSpringElasticityTTypeA,-,
+ShaftSpringElasticityTTypeB,-,
+ShaftSpringElasticityTTypeC,-,
+ShaftRigidBodyElasticityTTypeA,-,
+ShaftRigidBodyElasticityTTypeB,-,
+ShaftRigidBodyElasticityTTypeC,-,
+ShaftSpringElasticityVTypeA,-,
+ShaftSpringElasticityVTypeB,-,
+ShaftSpringElasticityVTypeC,-,
+ShaftRigidBodyElasticityVTypeA,-,
+ShaftRigidBodyElasticityVTypeB,-,
+ShaftRigidBodyElasticityVTypeC,-,
+ShaftSpringElasticityTypeA,-,
+ShaftSpringElasticityTypeB,-,
+ShaftSpringElasticityTypeC,-,
+ShaftRigidBodyElasticityTypeA,-,
+ShaftRigidBodyElasticityTypeB,-,
+ShaftRigidBodyElasticityTypeC,-,
+ShaftHeatExpansion,-,
+ShaftTopHeatExpansion,,
+ShaftBotHeatExpansion,,
+ShaftSpringHeatExpansionTypeA,-,
+ShaftSpringHeatExpansionTypeB,-,
+ShaftSpringHeatExpansionTypeC,-,
+ShaftRigidBodyHeatExpansionTypeA,-,
+ShaftRigidBodyHeatExpansionTypeB,-,
+ShaftRigidBodyHeatExpansionTypeC,-,
+ShaftTopHeatExpansionTRef,,
+ShaftBotHeatExpansionTRef,,
+ShaftTopEModulus,,
+ShaftBotEModulus,,
+ShaftTopYieldStress,,
+ShaftBotYieldStress,,
+ShaftTopLatentHeat,,
+ShaftBotLatentHeat,,
+ShaftTopJouleHeatFrac,,
+ShaftBotJouleHeatFrac,,
+,,
+SheetMaterialDensity,-,Nominal value of cap mateiral
+SheetMaterialTopDensityTypeA,-,
+SheetMaterialTopDensityTypeB,-,
+SheetMaterialTopDensityTypeC,-,
+SheetMaterialBotDensityTypeA,-,
+SheetMaterialBotDensityTypeB,-,
+SheetMaterialBotDensityTypeC,-,
+SheetMaterialEConductivity,-,
+SheetMaterialTopEConductivityTypeA,-,
+SheetMaterialTopEConductivityTypeB,-,
+SheetMaterialTopEConductivityTypeC,-,
+SheetMaterialBotEConductivityTypeA,-,
+SheetMaterialBotEConductivityTypeB,-,
+SheetMaterialBotEConductivityTypeC,-,
+SheetMaterialHConductivity,-,
+SheetMaterialTopHConductivityTypeA,-,
+SheetMaterialTopHConductivityTypeB,-,
+SheetMaterialTopHConductivityTypeC,-,
+SheetMaterialBotHConductivityTypeA,-,
+SheetMaterialBotHConductivityTypeB,-,
+SheetMaterialBotHConductivityTypeC,-,
+SheetMaterialSpecHeat,-,
+SheetMaterialTopSpecHeatTypeA,-,
+SheetMaterialTopSpecHeatTypeB,-,
+SheetMaterialTopSpecHeatTypeC,-,
+SheetMaterialBotSpecHeatTypeA,-,
+SheetMaterialBotSpecHeatTypeB,-,
+SheetMaterialBotSpecHeatTypeC,-,
+SheetMaterialLatentHeat,-,
+SheetMaterialTopLatentHeatTypeA,-,
+SheetMaterialTopLatentHeatTypeB,-,
+SheetMaterialTopLatentHeatTypeC,-,
+SheetMaterialBotLatentHeatTypeA,-,
+SheetMaterialBotLatentHeatTypeB,-,
+SheetMaterialBotLatentHeatTypeC,-,
+SheetMaterialPlasticity,-,
+SheetMaterialTopPlasticityTTypeA,-,
+SheetMaterialTopPlasticityTTypeB,-,
+SheetMaterialTopPlasticityTTypeC,-,
+SheetMaterialBotPlasticityTTypeA,-,
+SheetMaterialBotPlasticityTTypeB,-,
+SheetMaterialBotPlasticityTTypeC,-,
+SheetMaterialTopElasticityTTypeA,-,
+SheetMaterialTopElasticityTTypeB,-,
+SheetMaterialTopElasticityTTypeC,-,
+SheetMaterialBotElasticityTTypeA,-,
+SheetMaterialBotElasticityTTypeB,-,
+SheetMaterialBotElasticityTTypeC,-,
+SheetMaterialTopPlasticityVTypeA,-,
+SheetMaterialTopPlasticityVTypeB,-,
+SheetMaterialTopPlasticityVTypeC,-,
+SheetMaterialBotPlasticityVTypeA,-,
+SheetMaterialBotPlasticityVTypeB,-,
+SheetMaterialBotPlasticityVTypeC,-,
+SheetMaterialTopElasticityVTypeA,-,
+SheetMaterialTopElasticityVTypeB,-,
+SheetMaterialTopElasticityVTypeC,-,
+SheetMaterialBotElasticityVTypeA,-,
+SheetMaterialBotElasticityVTypeB,-,
+SheetMaterialBotElasticityVTypeC,-,
+SheetMaterialTopPlasticityTypeA,-,
+SheetMaterialTopPlasticityTypeB,-,
+SheetMaterialTopPlasticityTypeC,-,
+SheetMaterialBotPlasticityTypeA,-,
+SheetMaterialBotPlasticityTypeB,-,
+SheetMaterialBotPlasticityTypeC,-,
+SheetMaterialElasticity,-,
+SheetMaterialTopElasticityTypeA,-,
+SheetMaterialTopElasticityTypeB,-,
+SheetMaterialTopElasticityTypeC,-,
+SheetMaterialBotElasticityTypeA,-,
+SheetMaterialBotElasticityTypeB,-,
+SheetMaterialBotElasticityTypeC,-,
+SheetMaterialHeatExpansion,-,Nominal Heat expansion coefficient of sheet material
+SheetMaterialTopHeatExpansionTypeA,-,
+SheetMaterialTopHeatExpansionTypeB,-,
+SheetMaterialTopHeatExpansionTypeC,-,
+SheetMaterialBotHeatExpansionTypeA,-,
+SheetMaterialBotHeatExpansionTypeB,-,
+SheetMaterialBotHeatExpansionTypeC,-,
+SheetTopMaterialDensityStd,-,Density standard deviation
+SheetMaterialTopDensity,,
+SheetTopMaterialEConductivityStd,-,
+SheetMaterialTopEConductivity,,
+SheetTopMaterialHConductivityStd,-,
+SheetMaterialTopHConductivity,,
+SheetTopMaterialSpecHeatStd,-,
+SheetMaterialTopSpecHeat,,
+SheetTopMaterialPlasticityStd,-,
+SheetTopMaterialElasticityStd,-,
+SheetTopMaterialHeatExpansionStd,-,Heat expansion coefficient standard deviation of sheet material
+SheetMaterialTopHeatExpansion,,
+SheetMaterialTopLatentHeat,,
+SheetMaterialTopHeatExpansionTRef,,
+SheetMaterialTopEModulus,,
+SheetMaterialTopYieldStress,,
+SheetMaterialTopJouleHeatFrac,,
+SheetMaterialTopTLiquidus,,
+SheetBotMaterialDensityStd,-,
+SheetMaterialBotDensity,,
+SheetBotMaterialEConductivityStd,-,
+SheetMaterialBotEConductivity,,
+SheetBotMaterialHConductivityStd,-,
+SheetMaterialBotHConductivity,,
+SheetBotMaterialSpecHeatStd,-,
+SheetMaterialBotSpecHeat,,
+SheetBotMaterialPlasticityStd,-,
+SheetBotMaterialElasticityStd,-,
+SheetBotMaterialHeatExpansionStd,-,
+SheetMaterialBotHeatExpansion,,
+SheetMaterialBotLatentHeat,,
+SheetMaterialBotHeatExpansionTRef,,
+SheetMaterialBotEModulus,,
+SheetMaterialBotYieldStress,,
+SheetMaterialBotJouleHeatFrac,,
+SheetMaterialBotTLiquidus,,
+SheetMidMaterialDensityStd,-,Density standard deviation
+SheetMaterialMidDensity,,
+SheetMidMaterialEConductivityStd,-,
+SheetMaterialMidEConductivity,,
+SheetMidMaterialHConductivityStd,-,
+SheetMaterialMidHConductivity,,
+SheetMidMaterialSpecHeatStd,-,
+SheetMaterialMidSpecHeat,,
+SheetMidMaterialPlasticityStd,-,
+SheetMidMaterialElasticityStd,-,
+SheetMidMaterialHeatExpansionStd,-,Heat expansion coefficient standard deviation of sheet material
+SheetMaterialMidHeatExpansion,,
+SheetMaterialMidLatentHeat,,
+SheetMaterialMidHeatExpansionTRef,,
+SheetMaterialMidEModulus,,
+SheetMaterialMidYieldStress,,
+SheetMaterialMidJouleHeatFrac,,
+SheetMaterialMidTLiquidus,,
+RadiationSteel,-,
+RadiationCopper,-,
+FilmThickness,-,
+,,
+InteractionCapTopSheetTopEConductivity,-,
+InteractionCapTopSheetTopHConductivity,-,
+InteractionSheetTopSheetBotEConductivity,-,
+InteractionSheetTopSheetBotHConductivity,-,
+InteractionSheetBotCapBotEConductivity,-,
+InteractionSheetBotCapBotHConductivity,-,
+InteractionCapCapEConductivity,-,
+InteractionCapCapHConductivity,-,
+InteractionCapTopSheetTopEConductivityStd,-,
+InteractionCapTopSheetTopHConductivityStd,-,
+InteractionSheetTopSheetBotEConductivityStd,-,
+InteractionSheetTopSheetBotHConductivityStd,-,
+InteractionSheetBotCapBotEConductivityStd,-,
+InteractionSheetBotCapBotHConductivityStd,-,
+InteractionCapCapEConductivityStd,-,
+InteractionCapCapHConductivityStd,-,
+,,
+BaseValueTopShaft,-,
+BaseValueBotShaft,-,
+BaseValueTopCap,-,
+BaseValueCap,-,
+BaseValueTopElectrode,-,
+BaseValueBotElectrode,-,
+BaseValue,-,
+,,
+RadiusPyrometer,-,
+AlphaPyrometer,-,
+DistancePyrometer,-,
+,,
+CODEALLEData,-,
+CODEALLESimulationNumber,-,
+CODEALLEScriptVersion,-,
+CODEALLECouplingVersion,-,
+CODEALLEMeshVersion,-,
+CODEALLEGun,-,
+CODEALLEWeldingSpotPosition,-,
+CODEALLEPartNumber,-,
+CODEALLEGunCharge,-,
+CODEALLEGunName,-,
+CODEALLEGunSupplier,-,
